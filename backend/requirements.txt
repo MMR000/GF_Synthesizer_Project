@@ -1,0 +1,11 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+requests==2.32.3
+pydantic==2.10.4
+numpy>=1.26,<2.1
+soundfile>=0.12.1
+# numba pin avoids an old-version resolver trap on Python 3.12.
+numba>=0.60
+# Enables the per-segment speaker pitch-lock that keeps the same voice/gender across
+# segments. Backend still works without it (clone-only fallback).
+librosa>=0.10.2

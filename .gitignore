@@ -1,0 +1,35 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Virtual environments (regenerable via uv/pip)
+.venv/
+venv/
+env/
+backend/.venv/
+
+# ---- Node / frontend ----
+node_modules/
+webui/node_modules/
+webui/dist/
+*.log
+
+# ---- Runtime / generated artifacts ----
+# Generated audio (regenerated at runtime; large)
+outputs/
+backend/storage/outputs/
+backend/storage/*.wav
+backend/storage/history.json
+backend/storage/server.log
+backend/storage/*.pid
+
+# Logs
+logs/
+
+# ---- Editor / OS ----
+.idea/
+.vscode/
+.DS_Store
+*.swp
